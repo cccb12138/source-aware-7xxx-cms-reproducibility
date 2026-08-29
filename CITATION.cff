@@ -5,8 +5,15 @@ type: software
 authors:
   - family-names: "Chang"
     given-names: "Bo"
-version: "1.1.0-rc1"
+version: "1.1.0"
+date-released: "2026-08-29"
 repository-code: "https://github.com/cccb12138/source-aware-7xxx-cms-reproducibility"
 license: "BSD-3-Clause"
-# Add the new version-specific Zenodo DOI and release date only after the
-# v1.1.0 GitHub release has been archived with the same payload.
+abstract: "Frozen analysis scripts, fixed source-group folds, provenance metadata, aggregate results, and final figures for source-aware validation of heterogeneous partially labelled 7xxx aluminium-alloy data."
+keywords:
+  - "materials informatics"
+  - "7xxx aluminium alloys"
+  - "source-blocked validation"
+  - "data provenance"
+  - "partial-label learning"
+# Add the version-specific DOI after Zenodo archives the v1.1.0 GitHub release.

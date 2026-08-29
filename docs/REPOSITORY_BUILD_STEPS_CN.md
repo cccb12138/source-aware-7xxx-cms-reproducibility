@@ -61,17 +61,17 @@ git push -u origin main
 
 确认 GitHub 网页能够直接看到 README、frozen scripts、环境、folds、source index、正确 CMS 图表和许可。由于来源许可审查未完成，仓库不得声称已经发布完整 row-level 数据。
 
-## 五、先建立 Zenodo 新版本草稿并预留 DOI
+## 五、启用 Zenodo–GitHub 自动归档
 
-打开已发布的 Zenodo 1.0.0 记录，点击 `New version` 建立 1.1.0 草稿。不要修改或替换旧版本文件。在新版本草稿中点击 `Get a DOI now!` 预留新的 version-specific DOI，但暂时不要发布。
+在 Zenodo 的 GitHub 设置中关闭旧仓库连接，并为新仓库 `cccb12138/source-aware-7xxx-cms-reproducibility` 打开开关。确认新仓库显示在 `Enabled Repositories` 中且状态为 `ON`。
 
-将预留 DOI 写入 `CITATION.cff` 和 README，把 `1.1.0-rc1` 改为 `1.1.0`，并填写最终 release date。重新运行验证，然后提交并推送这个 DOI 同步修改。
+自动归档和手工上传只选择一种。本仓库采用 Zenodo–GitHub 自动归档：Zenodo 会在 GitHub release 发布后下载该 release 的源码归档并生成新的 DOI。不要同时新建手工 Zenodo 上传，以免得到重复记录。
 
-Zenodo 官方说明：新版本是一个具有独立文件、metadata 和持久标识符的新记录，并与旧版本相互关联；预留 DOI 可以在发布前写入待上传文件。
+GitHub release 发布前，`CITATION.cff` 必须已经写成正式 `1.1.0`、正确发布日期和新仓库 URL。DOI 字段暂时省略，等 Zenodo 自动生成后再同步。
 
-## 六、合并后打最终 tag
+## 六、打最终 tag
 
-只有在 GitHub `main`、预留 DOI、CITATION、README、本地验证结果和预期 release 文件完全一致后执行：
+只有在 GitHub `main`、CITATION、README、本地验证结果和预期 release 文件完全一致后执行：
 
 ```powershell
 git switch main
@@ -80,7 +80,7 @@ git tag -a v1.1.0 -m "CMS reproducibility release v1.1.0"
 git push origin v1.1.0
 ```
 
-不要移动已有 `v1.0.0`。tag 必须指向最终审核过的 commit。
+新仓库不创建旧 `v1.0.0` tag。`v1.1.0` 必须指向最终审核过的 commit，发布后不要移动。
 
 ## 七、创建 GitHub release
 
@@ -88,27 +88,25 @@ git push origin v1.1.0
 
 - 对应 CMS 投稿稿件；
 - frozen script 范围和哈希；
--固定环境与 folds；
+- 固定环境与 folds；
 - 公布的数据类型和因许可未公布的数据；
 - Fig.4 已从旧 0.547 标注修正为最终 0.527；
 - 与 v1.0.0 的差异。
 
 发布前下载 release 自动生成的 source archive，并在临时目录再次运行 `python code/validate_release.py`。GitHub release 由 tag 指定的 commit 生成，并自动提供 ZIP 和 tar.gz 源码归档。
 
-## 八、发布 Zenodo 1.1.0
+## 八、核对 Zenodo 自动归档
 
-将 GitHub `v1.1.0` 对应的源码 ZIP 上传到已经预留 DOI 的 Zenodo 1.1.0 草稿。若选择 Zenodo–GitHub 自动归档，则不要再手工建立另一个重复记录；两种方式只选一种。本项目已经存在 1.0.0 记录，采用“New version 草稿 + 预留 DOI + 上传最终 tag ZIP”的手工方式更容易保证精确对应。
+点击 GitHub 的 `Publish release` 后等待 Zenodo 自动归档。不要另行上传 ZIP。新记录出现后确认：
 
-发布前确认：
-
-1. Zenodo 文件与 GitHub tag 指向同一 payload；
+1. Zenodo 文件来自 GitHub `v1.1.0` release；
 2. creator 为 Bo Chang；
 3. title 与仓库/CITATION 一致；
 4. version 为 1.1.0；
 5. related identifier 指向 GitHub release；
 6. access-rights 和数据许可表述与仓库一致。
 
-确认 Zenodo 草稿中的 DOI 与仓库 `CITATION.cff` 相同、ZIP 校验值与最终 tag archive 相同后再点击 Publish。论文中引用这个新的 version-specific DOI，不继续把旧 v1.0.0 描述成最终投稿代码。
+获得 DOI 后，将它加入 `CITATION.cff`、README 和论文。这个 DOI 同步提交发生在 `v1.1.0` tag 之后，因此不能移动或重写已经发布的 tag。论文中引用新 DOI，不继续把旧 DOI 描述成最终投稿代码。
 
 ## 九、论文 Data availability 最终核对
 
@@ -117,5 +115,4 @@ git push origin v1.1.0
 ## 官方操作参考
 
 - GitHub release：<https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository>
-- Zenodo 新版本：<https://help.zenodo.org/docs/deposit/manage-versions/>
-- Zenodo 预留 DOI：<https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/>
+- Zenodo–GitHub 集成：<https://help.zenodo.org/docs/github/>

@@ -68,7 +68,7 @@ The repository instead provides the complete source-group index, source-level ro
 
 ## Citation and release status
 
-Zenodo version 1.0.0 is available at <https://doi.org/10.5281/zenodo.21840483>. This branch prepares a substantive reproducibility update and must be released under a new version, proposed as v1.1.0. Before the final Git tag is created, create a Zenodo new-version draft, reserve its DOI, and add that DOI and the final release date to `CITATION.cff`. The GitHub tag, GitHub release archive, and Zenodo files must then use the same reviewed payload.
+This repository is prepared for GitHub release v1.1.0 dated 2026-08-29. Zenodo–GitHub integration is enabled for this repository; Zenodo will archive the tagged source when the GitHub release is published and assign a new version-specific DOI. That DOI will then be added to this README, `CITATION.cff`, and the manuscript. The earlier repository archive at <https://doi.org/10.5281/zenodo.21840483> is historical and is not the archive to cite for the CMS submission.
 
 ## Licensing
 

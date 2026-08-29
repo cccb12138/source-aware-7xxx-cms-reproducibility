@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.1.0] - pending
+## [1.1.0] - 2026-08-29
 
 - Added the complete frozen 00–48 analysis chain, shared utilities, and SHA-256 manifest.
 - Added pinned modelling environment files.
