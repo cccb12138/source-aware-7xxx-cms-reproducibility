@@ -2,6 +2,8 @@
 
 This release is the public reproducibility package prepared for the associated *Computational Materials Science* submission.
 
+Zenodo DOI: <https://doi.org/10.5281/zenodo.22162478>
+
 ## Included
 
 - Complete frozen 00–48 analysis and manuscript-asset script chain, shared utilities, and SHA-256 checksums.

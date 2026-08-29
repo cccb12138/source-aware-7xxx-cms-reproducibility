@@ -106,7 +106,7 @@ git push origin v1.1.0
 5. related identifier 指向 GitHub release；
 6. access-rights 和数据许可表述与仓库一致。
 
-获得 DOI 后，将它加入 `CITATION.cff`、README 和论文。这个 DOI 同步提交发生在 `v1.1.0` tag 之后，因此不能移动或重写已经发布的 tag。论文中引用新 DOI，不继续把旧 DOI 描述成最终投稿代码。
+Zenodo 已为 `v1.1.0` 生成 DOI：<https://doi.org/10.5281/zenodo.22162478>。该 DOI 已同步加入 `CITATION.cff`、README 和论文。这个 DOI 同步提交发生在 `v1.1.0` tag 之后，因此不能移动或重写已经发布的 tag。论文中引用新 DOI，不继续把旧 DOI 描述成最终投稿代码。
 
 ## 九、论文 Data availability 最终核对
 

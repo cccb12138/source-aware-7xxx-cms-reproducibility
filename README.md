@@ -68,7 +68,7 @@ The repository instead provides the complete source-group index, source-level ro
 
 ## Citation and release status
 
-This repository is prepared for GitHub release v1.1.0 dated 2026-08-29. Zenodo–GitHub integration is enabled for this repository; Zenodo will archive the tagged source when the GitHub release is published and assign a new version-specific DOI. That DOI will then be added to this README, `CITATION.cff`, and the manuscript. The earlier repository archive at <https://doi.org/10.5281/zenodo.21840483> is historical and is not the archive to cite for the CMS submission.
+GitHub release v1.1.0, dated 2026-08-29, is archived on Zenodo at <https://doi.org/10.5281/zenodo.22162478>. This is the version-specific DOI to cite for the CMS submission. The earlier repository archive at <https://doi.org/10.5281/zenodo.21840483> is historical.
 
 ## Licensing
 
