@@ -1,0 +1,6 @@
+Cohort,Rows,Sources,Datasets,Target_or_Use,Paper_Role
+YS_307,307,63,4,YS_0.2pct_MPa,次要探索性预测
+UTS_675,675,258,6,UTS_MPa,主要确认性预测与SHAP解释
+EL_537,537,164,5,EL_pct,次要探索性预测
+MTL_689,689,260,6,YS/UTS/EL部分标签,部分标签MTL对照
+Matched_266,266,59,4,YS+UTS+EL完整,同一样本可比性与稳健性验证

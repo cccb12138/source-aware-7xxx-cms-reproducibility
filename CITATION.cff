@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this repository, cite this software release and the associated article."
+title: "Source-aware and leakage-resistant materials informatics for heterogeneous partially labelled 7xxx aluminium-alloy data"
+type: software
+authors:
+  - family-names: "Chang"
+    given-names: "Bo"
+version: "1.1.0-rc1"
+repository-code: "https://github.com/cccb12138/source-aware-7xxx-cms-reproducibility"
+license: "BSD-3-Clause"
+# Add the new version-specific Zenodo DOI and release date only after the
+# v1.1.0 GitHub release has been archived with the same payload.

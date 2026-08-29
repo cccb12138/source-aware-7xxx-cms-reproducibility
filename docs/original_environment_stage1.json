@@ -1,0 +1,53 @@
+{
+  "python_executable": "D:\\anaconda\\envs\\ML\\python.exe",
+  "python_version": "3.9.25 (main, Nov  3 2025, 22:44:01) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "workbook_exists": true,
+  "workbook_path": "C:\\Users\\dell\\OneDrive\\Desktop\\7000系铝合金_重新建模数据总表.xlsx",
+  "stage1": {
+    "pandas": {
+      "available": true,
+      "version": "2.3.3"
+    },
+    "numpy": {
+      "available": true,
+      "version": "1.26.4"
+    },
+    "sklearn": {
+      "available": true,
+      "version": "1.5.1"
+    },
+    "openpyxl": {
+      "available": true,
+      "version": "3.1.5"
+    }
+  },
+  "single_target": {
+    "xgboost": {
+      "available": true,
+      "version": "2.0.3"
+    },
+    "optuna": {
+      "available": true,
+      "version": "4.8.0"
+    },
+    "shap": {
+      "available": true,
+      "version": "0.47.2"
+    },
+    "matplotlib": {
+      "available": true,
+      "version": "3.9.2"
+    },
+    "seaborn": {
+      "available": true,
+      "version": "0.13.2"
+    }
+  },
+  "mtl": {
+    "torch": {
+      "available": false,
+      "error": "ModuleNotFoundError: No module named 'torch'"
+    }
+  }
+}

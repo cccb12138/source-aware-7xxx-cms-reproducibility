@@ -1,0 +1,9 @@
+Frozen_Number,Original_Number,Title_Key,Location,Decision,Reason
+Fig.1,Fig.1,data_structure_and_validation_design,正文,保留,承担主线证据
+Fig.2,Fig.2,UTS_source_blocked_performance,正文,保留,承担主线证据
+Fig.3,Fig.3,UTS_SHAP_importance_and_effects,正文,保留,承担主线证据
+Fig.4,Fig.4,UTS_credibility_and_transfer,正文,保留,承担主线证据
+Fig.5,Fig.5,target_positioning_and_MTL,正文,保留,承担主线证据
+Fig.S1,Fig.6,matched_subset_robustness,补充材料,移出正文,同样本可比性很重要，但四联图信息密度高且正文已有目标定位；正文报告关键数值即可
+Fig.7,Fig.7,nested_model_and_feature_decisions,正文,保留,承担主线证据
+Fig.8,Fig.8,source_and_dataset_heterogeneity,正文,保留,承担主线证据

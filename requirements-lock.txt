@@ -1,0 +1,14 @@
+# Verified core analysis environment. See docs/REPRODUCIBILITY.md for the
+# distinction between the historical stage-1 snapshot and the current MTL check.
+numpy==1.26.4
+pandas==2.3.3
+scikit-learn==1.5.1
+xgboost==2.0.3
+optuna==4.8.0
+shap==0.47.2
+torch==2.6.0
+scipy==1.13.1
+matplotlib==3.9.2
+seaborn==0.13.2
+openpyxl==3.1.5
+Pillow==11.1.0

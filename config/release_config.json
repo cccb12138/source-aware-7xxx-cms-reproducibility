@@ -1,0 +1,13 @@
+{
+  "freeze_name": "submission_freeze",
+  "cohorts": {
+    "UTS_scope_clean_675.csv": {"rows": 675, "target": "UTS_MPa"},
+    "YS_scope_clean_307.csv": {"rows": 307, "target": "YS_0.2pct_MPa"},
+    "EL_scope_clean_537.csv": {"rows": 537, "target": "EL_pct"},
+    "Partial_label_MTL_689.csv": {"rows": 689, "target": "partial-label YS/UTS/EL"},
+    "Matched_complete_266.csv": {"rows": 266, "target": "complete YS/UTS/EL"}
+  },
+  "primary_target": "UTS_MPa",
+  "group_column": "Source_Group",
+  "fold_column": "Outer_Fold"
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+~$*.xlsx
+*.inspect.ndjson
+workbook_previews/
+internal_review/
+restricted_data/
+reference_pdfs/
