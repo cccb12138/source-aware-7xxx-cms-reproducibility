@@ -20,7 +20,7 @@ git status --short
 4. `data/source_index/` 保存来源索引和重建说明。
 5. `data/public/` 只允许放入许可审查状态为 `Approved_open` 的记录。
 6. `results/summary/` 只放汇总结果，不放 `UTS_final_oof_predictions.csv`。
-7. `figures/` 使用 CMS 最终 Fig.1–Fig.7 编号；Fig.4 必须显示 0.527。
+7. `figures/` 使用 CMS 最终 Fig.1–Fig.8 编号。
 8. 不上传总工作簿、参考 PDF、工作簿预览、本机缓存、OneDrive 路径或任何凭据。
 
 ## 三、本地验证
