@@ -3,10 +3,12 @@ message: "If you use this repository, cite this software release and the associa
 title: "Source-aware and leakage-resistant materials informatics for heterogeneous partially labelled 7xxx aluminium-alloy data"
 type: software
 authors:
+ - family-names: "Wu"
+    given-names: "Ke"
   - family-names: "Chang"
     given-names: "Bo"
 version: "1.1.0"
-date-released: "2026-08-29"
+date-released: "2026-08"
 repository-code: "https://github.com/cccb12138/source-aware-7xxx-cms-reproducibility"
 doi: "10.5281/zenodo.22162478"
 license: "BSD-3-Clause"
