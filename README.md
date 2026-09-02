@@ -30,7 +30,7 @@ The final UTS RF–XGBoost ensemble achieved source-blocked out-of-fold R² = 0.
 - `data/schema/`: cohort summary and data dictionary.
 - `results/summary/`: aggregate metrics and decisions; row-level OOF predictions are deliberately excluded.
 - `figure_data/`: aggregate data used by the released figures.
-- `figures/`: CMS manuscript figures with final Fig. 1–Fig. 7 numbering and corrected Fig. 4.
+- `figures/`: CMS manuscript figures with final Fig. 1–Fig.8 numbering and corrected Fig. 5.
 - `docs/`: reproducibility, data provenance, licensing, and release instructions.
 
 ## Environment
